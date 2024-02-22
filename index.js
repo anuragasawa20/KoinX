@@ -50,11 +50,10 @@ async function updateCurrencies() {
 }
 
 // Schedule the job to run every hour
-schedule.scheduleJob('0 * * * *', () => {
-    console.log('Updating currencies...');
-    updateCurrencies();
-});
-
+// schedule.scheduleJob('0 * * * *', () => {
+//     console.log('Updating currencies...');
+//     updateCurrencies();
+// });
 
 
 const server = app.listen(port, () => {
